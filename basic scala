@@ -35,6 +35,73 @@ to
 get 
 ajob
 
+### ARRAY SAMPLE ###
+object demo{
+     | def main(args: Array[String]) {
+     | var myList = Array(1.9,2.9, 3.4, 3.4)
+     | // print all the array elements 
+     | for (x <- myList) {
+     | println(x)
+     | }
+     | }
+     | }
+     
+##OUTPUT##
+demo.main(Array(""))
+1.9
+2.9
+3.4
+3.4
+
+#####FOREACH AND FOR ###
+
+1.vi pa.scala
+args.foreach(arg => println(arg))
+##RUN  ##
+scala pa.scala i will get the job
+i 
+will
+get
+the
+job
+
+2.
+vi foragrs.scala
+ for (arg <- args)
+println(arg)
+output
+scala forargs.scala i will
+i 
+will
+
+
+####Parameterize#3
+vi para.scala
+
+val greetStrings = new Array[String](3)
+greetStrings(0) = "Hello"
+greetStrings(1) = ","
+greetStrings(2) = "world!\n"
+
+for (i <- 0 to 2)
+print(greetStrings(i))
+
+run
+scala para.scala
+
+
+####
+
+Arrays are mutable objects
+
+Though you can not change the length of the array you can change the objects in the array.
+
+## lists are  (scala.Li
+
+
+
+
+
 
 
 
