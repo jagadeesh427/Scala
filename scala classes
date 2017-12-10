@@ -1,0 +1,41 @@
+class department(departmentId: Int, departmentName: String)
+
+
+
+scala> class departments(val departmentid: Int, val departmentname: String)
+defined class departments
+
+scala> class departments(var departmentid: Int, var departmentname: String)
+defined class departments
+
+
+val d = new departments(1, "fan shop")
+d: departments = departments@64cee07
+
+d.departmentid
+res2: Int = 1
+
+
+
+scala> class departments(var departmentid: Int, var  departmentname: String){
+     | println("departmendid is " + departmentid + " and departmentsname is " +  departmentname) 
+     | }
+
+
+val d = new departments(1, "fan shop")
+departmendid is 1 and departmentsname is fan shop
+=====>  d: departments = departments@1cab0bfb
+
+
+###After overriding
+
+class departments(var departmentid: Int, var  departmentname: String){
+     | println("departmendid is " + departmentid + " and departmentsname is " +  departmentname) 
+     | override def toString = "departments(" + departmentid + ", " + departmentname + ")"
+     | }
+     
+     
+     
+val d = new departments(1, "fan shop")
+departmendid is 1 and departmentsname is fan shop
+======> d: departments = departments(1, fan shop)
